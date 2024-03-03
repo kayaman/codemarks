@@ -25,6 +25,20 @@ Using the output above, create new Authentication and Signing keys on [GitHUb](h
 ssh -T git@github.com
 ```
 
+### SSH commit signature verification
+
+```bash
+git config --global gpg.format ssh
+git config --global user.signingkey </PATH/TO/.SSH/KEY.PUB>
+```
+
+When committing changes in your local branch, add the -S flag to the git commit command:
+
+```bash
+git commit -S -m "YOUR_COMMIT_MESSAGE"
+# Creates a signed commit
+```
+
 ## GPG configuration
 
 ```bash
@@ -36,11 +50,4 @@ gpg --armor --export <GPG key id>
 
 Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`
 
-```bash
-git config --global --unset gpg.format
-gpg --list-secret-keys --keyid-format=long
-git config --global user.signingkey <GPG key id>
-git config --global commit.gpgsign true
-```
-
-confused
+Note: not using GPG at the moment.
