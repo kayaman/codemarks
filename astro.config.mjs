@@ -18,6 +18,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'GitHub Setup', link: '/guides/github-setup/' },
 					],
 				},
 				{
