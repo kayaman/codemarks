@@ -37,7 +37,10 @@ gpg --armor --export <GPG key id>
 Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`
 
 ```bash
-git config --global gpg.format ssh
-git config --global user.signingkey <path to ssh file .pub>
+git config --global --unset gpg.format
+gpg --list-secret-keys --keyid-format=long
+git config --global user.signingkey <GPG key id>
 git config --global commit.gpgsign true
 ```
+
+confused
