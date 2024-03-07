@@ -14,6 +14,9 @@ git config --global user.email "m@rco.sh"
 
 ```bash
 ssh-keygen -t ed25519 -C "m@rco.sh"
+```
+
+```bash
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
