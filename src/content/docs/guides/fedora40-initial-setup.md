@@ -49,3 +49,42 @@ Managing Docker as non-root
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
+
+## Configure shell to zsh
+
+```bash
+zsh --version
+chsh -s $(which zsh)
+# sudo lchsh $USER /usr/bin/zsh
+```
+
+oh-my-zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## Node.js
+
+```bash
+sudo dnf install nodejs
+```
+
+Installing global modules
+
+```bash
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+```
+
+Include on .zshrc or equivalent:
+
+```bash
+export PATH=~/.npm-global/bin:$PATH
+```
+
+Update system variables:
+
+```bash
+source ~/.zshrc
+```
