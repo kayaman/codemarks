@@ -58,10 +58,34 @@ chsh -s $(which zsh)
 # sudo lchsh $USER /usr/bin/zsh
 ```
 
-oh-my-zsh
+### oh-my-zsh
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Powerlevel10k
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
+
+```bash
+p10k configure
+```
+
+Syntax highlightning and Autocompletions
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Add to .zshrc:
+
+```bash
+plugins=(... zsh-syntax-highlighting zsh-autosuggestions)
 ```
 
 ## Node.js
@@ -87,4 +111,10 @@ Update system variables:
 
 ```bash
 source ~/.zshrc
+```
+
+## Neovim
+
+```bash
+sudo dnf install neovim
 ```
