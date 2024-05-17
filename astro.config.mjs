@@ -7,6 +7,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Codemarks',
+      editLink: {
+        baseUrl: 'https://github.com/kayaman/codemarks/edit/main/',
+      },
     }),
   ],
 });
