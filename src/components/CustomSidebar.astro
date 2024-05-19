@@ -1,0 +1,24 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+import { Icon } from '@astrojs/starlight/components';
+
+const link = 'https://github.com/kayaman/codemarks/new/main/src/content/docs?value=---%0Atitle:%20%0Adescription:%0A---%0A%0A';
+---
+
+<a href={link} target="_blank"><Icon name="add-document" color="var(--sl-color-green-high)" size="1.2rem" /> Add new page</a>
+<Default {...Astro.props}><slot /></Default>
+
+<style>
+	a {
+		list-style: none;
+		/* padding-left: 1rem; */
+		margin-inline-start: var(--sl-sidebar-item-padding-inline);
+		/* border-inline-start: 1px solid var(--sl-color-hairline-light); */
+		padding-inline-start: 8px;
+		font-size: var(--sl-text-lg);
+		font-weight: 800;
+		color: var(--sl-color-green-high);
+		text-decoration: none;
+	}
+</style>

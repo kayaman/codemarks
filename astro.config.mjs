@@ -10,6 +10,10 @@ export default defineConfig({
       editLink: {
         baseUrl: 'https://github.com/kayaman/codemarks/edit/main/',
       },
+      components: {
+        Sidebar: './src/components/CustomSidebar.astro',
+      },
+      plugins: [],
     }),
   ],
 });
