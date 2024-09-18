@@ -1,7 +1,28 @@
 ---
-title: 'Setting up basics on a new Ubuntu box'
+title: 'Setting up a new Ubuntu box'
 description: ''
 ---
+
+## update & upgrade
+
+```sh
+sudo apt update && sudo apt upgrade
+```
+
+## Node (Using nvm)
+
+```sh
+wget -q -O- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+. ~/.zshrc
+```
+
+````sh
+nvm --version
+```
+
+```sh
+nvm install node
+```
 
 ##  Docker
 
