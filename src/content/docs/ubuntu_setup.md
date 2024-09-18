@@ -16,7 +16,7 @@ wget -q -O- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bas
 . ~/.zshrc
 ```
 
-````sh
+```sh
 nvm --version
 ```
 
