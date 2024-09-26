@@ -32,7 +32,7 @@ ssh -T git@github.com
 
 ```bash
 git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global user.signingkey </PATH/TO/.SSH/KEY.PUB>
 ```
 
 When committing changes in your local branch, add the -S flag to the git commit command:
