@@ -29,6 +29,7 @@ nvm install node
 ### Setup APT´s repoitory:
 
 ```sh
+# Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -56,6 +57,13 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+### Configure Docker to start on boot with systemd
+
+```sh
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+```
+
 ### Docker Compose
 
 ```sh
