@@ -23,3 +23,13 @@ if ($oldPath.Split(';') -inotcontains 'C:\minikube'){
   [Environment]::SetEnvironmentVariable('Path', $('{0};C:\minikube' -f $oldPath), [EnvironmentVariableTarget]::Machine)
 }
 ```
+## Create aliases
+
+```sh
+code $PROFILE
+```
+
+```powershell title="Microsoft_Powershell_profile.ps1"
+Set-Alias -Name tf -Value terraform
+Set-Alias -Name k -Value kubectl
+```
