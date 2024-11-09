@@ -5,6 +5,14 @@ description: Common commands and tricks.
 
 ### Restart a pod
 
+1. Rolling Restart of Deployment
+
+```sh
+kubectl rollout restart deployment <deployment_name>
+```
+
+2. Scaling the Replica Count (Temporary scale to zero)
+
 Scale down to zero
 
 ```sh
