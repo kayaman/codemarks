@@ -1,5 +1,5 @@
 ---
-title: GitHub Setup
+title: GitHub
 description: Setup GitHub basics on a new machine
 ---
 
