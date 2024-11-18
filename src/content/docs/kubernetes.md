@@ -2,6 +2,15 @@
 title: Kubernetes cheat sheet
 description: Common commands and tricks.
 ---
+### Connect kubectl to an EKS cluster by creating a kubeconfig file
+
+```sh
+aws sts get-caller-identity
+```
+
+```sh
+aws eks update-kubeconfig --region region-code --name my-cluster
+```
 
 ### Restart a pod
 
@@ -24,5 +33,4 @@ Scale back up to the original number of replicas
 ```sh
 kubectl scale deployment <deployment_name> --replicas=<original_number>
 ```
-
 
