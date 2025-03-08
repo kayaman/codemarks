@@ -8,6 +8,7 @@ description: Setup GitHub basics on a new machine
 ```bash
 git config --global user.name "Marco Antonio Gonzalez Junior"
 git config --global user.email "m@rco.sh"
+git config --global core.editor "vim"
 ```
 
 ## SSH configuration
