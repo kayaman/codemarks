@@ -1,6 +1,6 @@
 ---
-title: vi
-description:
+title: Vim
+description: About Vim
 ---
 
 ## Convert Windows file to Linux file
