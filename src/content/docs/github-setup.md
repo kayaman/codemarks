@@ -3,13 +3,15 @@ title: GitHub
 description: Setup GitHub basics on a new machine
 ---
 
-## User configuration
+## Global configuration
 
 ```bash
 git config --global user.name "Marco Antonio Gonzalez Junior"
 git config --global user.email "m@rco.sh"
 git config --global core.editor "vim"
+git config --global init.defaultBranch main
 ```
+
 
 ## SSH configuration
 
