@@ -1,6 +1,6 @@
 ---
-title: 
-description:
+title: Terraform on Ubuntu
+description: Setting Up Terraform, Packer, and Recommended Add-ons on Ubuntu 24.04
 ---
 
 ## Setting Up Terraform, Packer, and Recommended Add-ons on Ubuntu 24.04
