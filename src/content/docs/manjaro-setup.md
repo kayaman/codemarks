@@ -35,7 +35,11 @@ pamac build visual-studio-code-bin
 ## Docker
 
 ```sh
-
+sudo pacman -Syu
+sudo pacman -S docker
+sudo systemctl enable --now docker.service
+sudo usermod -aG docker $USER
+newgrp docker
 ```
 
 ## Flutter
