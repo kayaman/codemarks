@@ -29,10 +29,7 @@ pamac build google-chrome
 ## VS Code
 
 ```sh
-curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/visual-studio-code-bin.tar.gz
-tar -xvf visual-studio-code-bin.tar.gz
-cd visual-studio-code-bin
-makepkg -si
+pamac build visual-studio-code-bin
 ```
 
 ## Docker
