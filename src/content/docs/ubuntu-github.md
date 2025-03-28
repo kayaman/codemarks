@@ -26,8 +26,10 @@ sudo apt install git
 After installation, configure your identity:
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "Marco Antonio Gonzalez Junior"
+git config --global user.email "m@rco.sh"
+git config --global core.editor "vim"
+git config --global init.defaultBranch main
 ```
 
 Make sure to use the same email address as your GitHub account.
@@ -37,7 +39,7 @@ Make sure to use the same email address as your GitHub account.
 Using SSH keys is more secure than password authentication:
 
 ```bash
-ssh-keygen -t ed25519 -C "your.email@example.com"
+ssh-keygen -t ed25519 -C "m@rco.sh"
 ```
 
 Press Enter to accept the default file location. You can set a passphrase for additional security.
