@@ -50,10 +50,9 @@ echo 'export PATH="/usr/bin/flutter/bin:$PATH"' >> ~/.zshrc
 ## GH
 
 ```sh
-curl -L -O https://github.com/cli/cli/releases/download/v2.46.0/gh_2.46.0_linux_amd64.tar.gz
-tar -zxvf gh_2.46.0_linux_amd64.tar.gz
-mv gh_2.46.0_linux_amd64 gh
-echo 'export PATH="/home/kayaman/lib/gh/bin:$PATH"' >> ~/.zshrc
+curl -L -O https://github.com/cli/cli/releases/download/v2.69.0/gh_2.69.0_linux_amd64.tar.gz
+tar -zxvf gh_2.69.0_linux_amd64.tar.gz
+mv gh_2.69.0_linux_amd64 $HOME/.local/bin/gh
 gh --version
 ```
 
