@@ -1,7 +1,24 @@
 ---
-title: 'Setting  up a new Manjaro box'
+title: 'Manjaro setup'
 description: ''
 ---
+
+**Enable `AUR` and `Flatpak` support**
+
+## Installing `yay`
+
+```sh
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+## Warp Terminal
+
+```sh
+yay -S warp-terminal
+```
 
 ## Google Chrome
 
@@ -17,6 +34,7 @@ tar -xvf visual-studio-code-bin.tar.gz
 cd visual-studio-code-bin
 makepkg -si
 ```
+
 ## Docker
 
 ```sh
@@ -30,34 +48,6 @@ curl -L -O https://storage.googleapis.com/flutter_infra_release/releases/stable/
 tar -xvf flutter_linux_3.19.5-stable.tar.xz
 sudo mv fllutter /usr/bin
 echo 'export PATH="/usr/bin/flutter/bin:$PATH"' >> ~/.zshrc
-```
-
-## ZSH
-
-```sh
-sudo pacman -Syu zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-Configure `~/.zshrc` to:
-
-```sh
-...
-plugins=(
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
-...
-```
-
-Then
-
-```sh
-source ~/.zshrc
-chsh -s $(which zsh)
 ```
 
 ## GH
