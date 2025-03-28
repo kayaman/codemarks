@@ -51,12 +51,12 @@ sudo mv fllutter /usr/bin
 echo 'export PATH="/usr/bin/flutter/bin:$PATH"' >> ~/.zshrc
 ```
 
-## GH
+## GitHub CLI
 
 ```sh
 curl -L -O https://github.com/cli/cli/releases/download/v2.69.0/gh_2.69.0_linux_amd64.tar.gz
 tar -zxvf gh_2.69.0_linux_amd64.tar.gz
-mv gh_2.69.0_linux_amd64 $HOME/.local/bin/gh
+sudo mv gh_2.69.0_linux_amd64/bin/gh /usr/local/bin/
 gh --version
 ```
 
