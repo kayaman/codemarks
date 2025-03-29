@@ -41,6 +41,13 @@ sudo systemctl enable --now docker.service
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+## Minikube
+
+```sh
+sudo pacman -Syu libvirt qemu dnsmasq
+sudo systemctl enable  libvirtd.service --now
+sudo systemctl enable virtlogd.service --now
+
 
 ## Flutter
 
