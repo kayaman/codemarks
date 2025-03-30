@@ -1,5 +1,5 @@
 ---
-title: 'Setting up a new Ubuntu box'
+title: 'Ubuntu 25'
 description: ''
 ---
 
@@ -26,55 +26,11 @@ nvm install node
 
 ##  Docker
 
-### Setup APT´s repoitory:
-
 ```sh
-# Add Docker's official GPG key:
-sudo apt-get update
-sudo apt-get install ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-
-# Add the repository to Apt sources:
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-```
-
-### Installl binaries:
-
-```sh
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
-
-### Post-install
-
-```sh
-sudo groupadd docker
+sudo apt install docker.io
+sudo apt install docker-compose
 sudo usermod -aG docker $USER
 newgrp docker
-```
-### Configure Docker to start on boot with systemd
-
-```sh
-sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
-```
-
-### Docker Compose
-
-```sh
-sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-## GDebi
-
-```sh
-sudo apt install gdebi -y
 ```
 
 ## ZSH & oh-my-zsh
