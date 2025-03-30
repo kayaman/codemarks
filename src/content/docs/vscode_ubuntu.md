@@ -20,7 +20,8 @@ Here are the steps to install Visual Studio Code on Ubuntu 24.04:
 
 3. Import the Microsoft GPG key:
    ```bash
-   wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -D -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft.gpg
    ```
 
 4. Add the VS Code repository:
