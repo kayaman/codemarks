@@ -5,13 +5,6 @@ description: Git and GitHub Setup on Ubuntu 24.04
 
 ## Git and GitHub Setup on Ubuntu 24.04
 
-### Initial Question
-**Human**: I have just installed a new Ubuntu 24.04 on my notebook. Please provide me complete instructions on setting up git and GitHub.
-
-**Assistant**: # Setting Up Git and GitHub on Ubuntu 24.04
-
-Here's a complete guide to setting up Git and GitHub on your new Ubuntu 24.04 installation:
-
 ### Install Git
 
 First, let's install Git via the terminal:
