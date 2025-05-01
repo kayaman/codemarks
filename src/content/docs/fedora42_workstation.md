@@ -16,7 +16,7 @@ sudo dnf install gh
 ## dotfiles
 
 - [VSCode](https://code.visualstudio.com/docs/setup/linux)
-- [Warp Terminal](https://www.warp.dev/)
+- [Warp Terminal](https://app.warp.dev/get_warp?package=rpm))
 - [nvm](https://github.com/nvm-sh/nvm)
 - [Helm](https://helm.sh/)
 
