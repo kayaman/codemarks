@@ -241,7 +241,7 @@ Here's a single script that does the entire GitHub setup process on Fedora 42:
 # User information
 GIT_USERNAME="Marco Antonio Gonzalez Junior"
 GIT_EMAIL="m@rco.sh"
-GITHUB_USERNAME="yourusername"
+GITHUB_USERNAME="kayaman"
 
 # Set colors for output
 GREEN='\033[0;32m'
