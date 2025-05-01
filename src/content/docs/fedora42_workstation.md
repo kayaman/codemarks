@@ -3,9 +3,17 @@ title: Fedora 42 Workstation
 description: new box setup
 ---
 
-- [GitHub](https://www.codemarks.dev/fedora_github/)
+## First things first
 
-## GitHub CLI
+```sh
+sudo dnf update
+```
+
+## GitHub
+
+- [instructions](https://www.codemarks.dev/fedora_github/)
+
+### CLI
 
 ```sh
 sudo dnf install gh
