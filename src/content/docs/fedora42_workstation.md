@@ -49,24 +49,30 @@ plugins=(
 
 ## dotfiles
 
-- [VSCode](https://code.visualstudio.com/docs/setup/linux)
-- [Warp Terminal](https://app.warp.dev/get_warp?package=rpm))
-- [nvm](https://github.com/nvm-sh/nvm)
-- [Helm](https://helm.sh/)
+## VSCode
 
+- [ref](https://code.visualstudio.com/docs/setup/linux)
+
+```sh
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+dnf check-update
+sudo dnf install code # or code-insiders
+```
 
 ## Docker / Podman / Podman Desktop
 
 ```sh
-sudo dnf install docker-cli containerd
-sudo dnf install docker-compose
-sudo dnf install docker-switch
-sudo dnf install podman-docker
-sudo dnf install podman docker-compose
-sudo dnf install podman docker-switch
+sudo dnf install docker-cli containerd docker-compose docker-switch
+sudo dnf install podman podman-docker
 flatpak install flathub io.podman_desktop.PodmanDesktop
 ```
 
-## Terraform
+## Others
 
+- [Warp Terminal](https://app.warp.dev/get_warp?package=rpm))
+- [nvm](https://github.com/nvm-sh/nvm)
+- [Helm](https://helm.sh/)
+- Thunderbird
 
