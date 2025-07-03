@@ -11,7 +11,20 @@ sudo zypper install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/o
 hmyzsh/master/tools/install.sh)"
 
+mkdir ~/Projects && $_
 
+gh repo clone dotfiles
+
+cat >> "$HOME/.zshrc" << 'EOZSH'
+# Added by dotfiles installer
+DOTFILES="$HOME/Projects/dotfiles"
+for file in $DOTFILES/zsh/*.zsh; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
+EOZSH
+
+source ~/.zshrc
 ```
 
 ## Git, GitHub and GH
