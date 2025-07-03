@@ -5,6 +5,14 @@ description: 'Initial setup of an OpenSUSE box'
 
 ## ZSH and Oh-my-ZSH
 
+```sh
+sudo zypper install zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/o
+hmyzsh/master/tools/install.sh)"
+
+
+```
 
 ## Git, GitHub and GH
 
